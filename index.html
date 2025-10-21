@@ -2,9 +2,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="app.js"></script>
+  <title>Vanilla-JS</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <form id="login-form" class="hidden">
+    <input
+    required
+    maxlength="15"
+    type="text"
+    id="username"
+    placeholder="Username">
+    <input type="submit" value="login">
+  </form>
+  <h1 id="greeting" class="hidden"></h1>
+  <script src="app.js"></script>
 </body>
 </html>
