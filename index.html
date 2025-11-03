@@ -13,13 +13,18 @@
     type="text"
     id="username"
     placeholder="Username">
-    <input type="submit" value="login">
+    <input type="submit" value="login" required />
   </form>
   <h2 id="clock">00:00:00</h2>
   <h1 id="greeting" class="hidden"></h1>
+  <form id="todo-form">
+    <input type="text" id="todo-input" placeholder="Write a to-do" required />
+    <button type="submit">Add</button>
+  </form>
+  <ul id="todo-list"></ul>
   <div id="quote">
-    <p>text : <span id="quote-text"></span></p>
-    <p>author : <span id="quote-author"></span></p>
+    <p><span id="quote-text"></span></p>
+    <p><span id="quote-author"></span></p>
   </div>
 
   <script src="js/greeting.js"></script>
